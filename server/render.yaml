@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: chuck-us-the-meeples-api
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: CORS_ORIGIN
+        sync: false
+      - key: NODE_ENV
+        value: production

@@ -1,0 +1,32 @@
+{
+  "name": "chuck-us-the-meeples-api",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "scripts": {
+    "start":     "node src/index.js",
+    "dev":       "cross-env NODE_ENV=development nodemon src/index.js",
+    "migrate":   "node src/migrate.js",
+    "test":      "vitest run",
+    "typecheck": "node --check src/index.js",
+    "lint":      "eslint \"src/**/*.js\""
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.0",
+    "pg": "^8.11.0"
+  },
+  "devDependencies": {
+    "@rollup/wasm-node": "^4.0.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.0.0",
+    "nodemon": "^3.0.0",
+    "supertest": "^6.3.0",
+    "vitest": "^1.0.0"
+  },
+  "vitest": {
+    "globals": true,
+    "environment": "node",
+    "include": ["tests/**/*.test.js"]
+  }
+}
