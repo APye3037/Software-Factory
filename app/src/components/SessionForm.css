@@ -1,0 +1,41 @@
+.session-form {
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  max-width: 560px;
+}
+
+.session-form h2 {
+  margin-bottom: 1.25rem;
+}
+
+.players-checkbox-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 0.4rem;
+  margin-top: 0.3rem;
+}
+
+.players-checkbox-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.players-checkbox-list label {
+  font-weight: normal;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.session-form .form-api-error {
+  margin-top: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  background: #fff5f5;
+  border: 1px solid var(--color-danger);
+  border-radius: var(--radius);
+  color: var(--color-danger);
+  font-size: 0.875rem;
+}
